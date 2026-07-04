@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            overflow-x: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Ambient liquid blobs in the background */
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 0;
+        }
+
+        body::before {
+            width: 300px;
+            height: 300px;
+            background: #ff007f;
+            top: 10%;
+            left: 15%;
+            opacity: 0.3;
+        }
+
+        body::after {
+            width: 400px;
+            height: 400px;
+            background: #4facfe;
+            bottom: 10%;
+            right: 15%;
+            opacity: 0.3;
+        }
+
+        /* Glassmorphism Container */
+        .glass-container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            padding: 40px;
+            color: #2c3e50;
+        }
+
+        /* Title Section */
+        .glass-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .glass-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #4b6cb7, #182848);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        /* Body Section */
+        .glass-body {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .glass-body p {
+            margin-bottom: 20px;
+        }
+
+        .glass-body p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+    <!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2489009');
+</script>
+<!-- End MailerLite Universal -->
+</head>
+<body>
+
+    <div class="glass-container">
+        <header class="glass-header">
+            <h1>Liquid Glass Aesthetics</h1>
+        </header>
+
+        <main class="glass-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <p>Attributes like <code>backdrop-filter</code> and soft background gradients give this layout its fluid, translucent appearance. It adapts elegantly to different screen sizes while maintaining its sleek, glassy depth.</p>
+        </main>
+    </div>
+
+</body>
+</html>
